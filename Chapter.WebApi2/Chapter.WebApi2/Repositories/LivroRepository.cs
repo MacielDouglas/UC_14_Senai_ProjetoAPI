@@ -15,5 +15,42 @@ namespace Chapter.WebApi2.Repositories
         {
             return _context.Livros.ToList();
         }
+
+        public Livro BuscarLivroId(int id) //metodo publico, retorna um livro específico, nome do método (BuscarLivroId), o id vem ocomo argumento
+        {
+            return _context.Livros.Find(id); // retorno, _context(conexão c/ banco) Livros(nome da tabela) .Find(id) irá buscar um elemento da tablea que corresponde ao id.
+        }
+
+        public void Cadastrar(Livro livro)
+        {
+            _context.Livros.Add(livro); // Faz a uma alteração na tabela, seria como um insert
+
+            _context.SaveChanges(); // Salva a alteração na tabela
+        }
+
+        public void Atualizar(int id, Livro livro) //primeiro ele irá fazer uma consulta no banco para saber se o id já existe, se sim volta com as informações
+        {
+            Livro livroBuscado = _context.Livros.Find(id);
+
+            if (livroBuscado != null)
+            {
+                livroBuscado.Titulo = livro.Titulo;
+                livroBuscado.QuantidadePaginas = livro.QuantidadePaginas;
+                livroBuscado.Disponivel = livro.Disponivel;
+            }
+
+            _context.Livros.Update(livroBuscado);
+
+            _context.SaveChanges();
+        }
+
+        public void Deletar(int id)
+        {
+            Livro livro = _context.Livros.Find(id);
+
+            _context.Livros.Remove(livro);
+
+            _context.SaveChanges();
+        }
     }
 }
