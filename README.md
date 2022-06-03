@@ -13,10 +13,13 @@ O modelo usado foi o HTTP do tipo RESTful que retorna um JSON (JSON é um format
 
 Cada operação utilizará um verbo HTTP para a ação realizada.
 
-GET – buscar
-POST – criar
-PUT – atualizar
-DELETE – exclui
+GET – buscar.
+
+POST – criar.
+
+PUT – atualizar.
+
+DELETE – exclui.
 
 | Método  | Endpoint | Descrição | Corpo da solicitação | Corpo da Resposta |
 |  :---:  |  :----:  |  :---:  | :---:  | :---:  |
