@@ -57,3 +57,4 @@ D:\WorkSpaceSenai\UC14\UC_14_Senai_ProjetoAPI\Chapter.WebApi2\Chapter.WebApi2\ob
 D:\WorkSpaceSenai\UC14\UC_14_Senai_ProjetoAPI\Chapter.WebApi2\Chapter.WebApi2\obj\Debug\net6.0\Chapter.WebApi2.pdb
 D:\WorkSpaceSenai\UC14\UC_14_Senai_ProjetoAPI\Chapter.WebApi2\Chapter.WebApi2\obj\Debug\net6.0\Chapter.WebApi2.genruntimeconfig.cache
 D:\WorkSpaceSenai\UC14\UC_14_Senai_ProjetoAPI\Chapter.WebApi2\Chapter.WebApi2\obj\Debug\net6.0\ref\Chapter.WebApi2.dll
+D:\WorkSpaceSenai\UC14\UC_14_Senai_ProjetoAPI\Chapter.WebApi2\Chapter.WebApi2\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
